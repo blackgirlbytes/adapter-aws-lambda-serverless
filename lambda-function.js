@@ -3,6 +3,7 @@ module.exports = lambdaFunction;
 const lowercaseKeys = require("lowercase-keys");
 
 async function lambdaFunction(probot, event, context) {
+  console.log('sup')
   try {
     // Ends function immediately after callback
     context.callbackWaitsForEmptyEventLoop = false;
